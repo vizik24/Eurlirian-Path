@@ -1,0 +1,10 @@
+The plan for the workflow is as follows:
+- get street network file in whatever format.
+- convert street network to a python graph / matrix
+- check if there is a eulirian path, if there is, find it.
+- if there is no eulirian circuit and no semi eulirian path, remove 
+    the number of nodes with odd degrees (num of edges connecting to node) - 2.
+    Then calculate the path.
+- after calculating the path or circuit, output this to a shapefile.
+- add back in any removed nodes with one degree as points in the shapefile and connect these to the main path with an out and back line.
+- convert the shp to a gpx file using https://pypi.org/project/gpx-converter/
