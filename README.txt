@@ -1,4 +1,4 @@
-RunCityStreets v0.1 (Alpha)
+RunCityStreets v0.2 (Alpha)
 
 Motivation + Aims:
 This project was started with a desire to run the length of my entire local area. I soon learned that
@@ -9,6 +9,8 @@ This project aims to find the most efficient running routes to achieve the above
 Current State of the Project:
 Provided with a shapefile of a given road network, the program converts this to a graph. From this graph,
 the Eulerian path is calculated, if this is not possible you can calculate the semi-eulirian path.
+
+In its current state, the best route will only be created for a fraction of the users.
 
 Graph creation logic:
 The current graph creation code removes nodes (street corners) that have either 0 streets connected to them,
